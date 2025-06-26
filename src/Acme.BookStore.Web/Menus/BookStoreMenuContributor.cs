@@ -67,7 +67,7 @@ public class BookStoreMenuContributor : IMenuContributor
                     "BooksStore.Books",
                     l["Menu:Books"],
                     url: "/Books"
-                )
+                ).RequirePermissions(BookStorePermissions.Books.Default) // Check the permission!
             )
         );
         
